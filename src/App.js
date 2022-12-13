@@ -8,12 +8,11 @@ function App() {
     const {onToggleButton, tg} = useTelegram()
     useEffect(() => {
         tg.ready()
-    }, [])
+    }, [tg])
     return (
         <div className="App">
 
             <Header/>
-            <p>GHFLSGHKJSFGHKJSDHGJKSHDGJKh</p>
             <button onClick={onToggleButton}>toggle</button>
         </div>
     );
